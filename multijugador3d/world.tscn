@@ -1,0 +1,16 @@
+[gd_scene format=2]
+
+[node name="world" type="Spatial"]
+
+[node name="spawn_points" type="Spatial" parent="."]
+
+[node name="0" type="Position3D" parent="spawn_points"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+
+[node name="1" type="Position3D" parent="spawn_points"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0 )
+
+[node name="players" type="Spatial" parent="."]
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.849933, 0.52689, 0, -0.52689, 0.849933, 0, 1.4212, 3.12212 )
